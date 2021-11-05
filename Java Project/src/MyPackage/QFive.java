@@ -1,6 +1,6 @@
 package MyPackage;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class QFive {
 	public void Index (String str, int idx) {
@@ -10,11 +10,15 @@ public class QFive {
 			ch[i] = str.charAt(i);
 		}
 		
+		String newStr = new String(ch);
+		
+		/*
 		String formatStr = Arrays.toString(ch)
 				.replace(",", "")
 				.replace("[", "")
 				.replace(" ", "")
 				.replace("]", "");
-		System.out.println("Q5: " + formatStr);
+		*/
+		System.out.println("Q5: " + newStr);
 	}
 }

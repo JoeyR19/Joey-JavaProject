@@ -25,10 +25,24 @@ public class Driver {
 		
 		//Q5
 		QFive qfive = new QFive();
-		qfive.Index("Veterinarian", 7);
+		qfive.Index("Veterinarian", 10);
 		
 		//Q6:
 		QSix qsix = new QSix();
 		qsix.evenOrOdd(10);
+		
+		//Q7:
+		QSeven.Sort();
+		
+		//Q8
+		//QEight qeight = new QEight();
+		QEight.Palindrome();
+		
+		//Q9
+		QNine.Prime();
+		
+		//Q10
+		QTen qten = new QTen();
+		qten.Compare(19, 12);
 	}
 }	

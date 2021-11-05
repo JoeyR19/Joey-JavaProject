@@ -3,14 +3,14 @@ package MyPackage;
 import java.util.ArrayList;
 
 public class QEight {
-	public static void main (String[] args) {
+	public static void Palindrome () {
 		ArrayList<String> notPalin = new ArrayList<String>();
 		ArrayList<String> Palin = new ArrayList<String>();
 		
 		notPalin.add("karan");
 		notPalin.add("madam");
 		notPalin.add("tom");
-		notPalin.add("civiv");
+		notPalin.add("civic");
 		notPalin.add("radar");
 		notPalin.add("jimmy");
 		notPalin.add("kayak");
@@ -18,24 +18,38 @@ public class QEight {
 		notPalin.add("refer");
 		notPalin.add("billy");
 		notPalin.add("did");
-		System.out.println(notPalin);
+		System.out.println("Q8: " + notPalin);
 		
-		String str = "refer";
-		String temp = "";
-		int l = str.length();
-		int lo = l / 2;
-		int a = l;
-		int b = a - lo;
+		for (int i = 0; i < notPalin.size(); ++i) {
 		
-		for (int i = l - 1; i >= (l - 1 - (lo - 1)); --i) {
-			temp += str.charAt(i);
+			String str = notPalin.get(i);
+			String tempa = "";
+			String tempb = "";
+			int l = str.length();
+			int lo = l / 2;
+			//int a = l;
+			//int b = a - lo;
+			
+			for (int j = l - 1; j >= (l - 1 - (lo - 1)); --j) {
+				tempa += str.charAt(j);
+			}
+			//System.out.println("temp: " + tempa);
+			
+			for (int k = 0; k < lo; ++k) {
+				tempb += str.charAt(k);
+			}
+			//System.out.println("temp: " + tempb);
+			
+			if (tempa.equals(tempb)) {
+				Palin.add(notPalin.get(i));
+			}
+			
+			//System.out.println(l);
+			//System.out.println(lo);
+			//String sub = str.substring(b, a);
+			//System.out.println(sub);
 		}
-		System.out.println("temp: " + temp);
-		
-		//System.out.println(l);
-		//System.out.println(lo);
-		String sub = str.substring(b, a);
-		//System.out.println(sub);
+		System.out.println("Q8: " + Palin);
 	}
 
 }
