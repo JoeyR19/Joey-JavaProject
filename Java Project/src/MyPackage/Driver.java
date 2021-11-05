@@ -23,5 +23,12 @@ public class Driver {
 		QFour qfour = new QFour();
 		qfour.Factorial(6);
 		
+		//Q5
+		QFive qfive = new QFive();
+		qfive.Index("Veterinarian", 7);
+		
+		//Q6:
+		QSix qsix = new QSix();
+		qsix.evenOrOdd(10);
 	}
 }	
