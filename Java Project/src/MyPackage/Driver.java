@@ -73,7 +73,7 @@ public class Driver {
 		//QSixteen.command();
 		
 		//Q17
-		QSeventeen.interest();
+		//QSeventeen.interest();
 		
 		//Q18
 		System.out.println("Q18: ");

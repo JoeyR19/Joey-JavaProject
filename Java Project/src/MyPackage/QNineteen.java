@@ -4,7 +4,20 @@ import java.util.ArrayList;
 
 public class QNineteen {
 	
+	private static boolean prime(int num) {
+		for (int i = 2; i < num; ++i) {
+			if (num % i == 0) {
+				//System.out.println("is not prime");
+				return false;
+			}
+		}
+		//System.out.println("is prime");
+		return true;
+	}
+	
 	public static void tenList () {
+		
+		//prime(9);
 	
 		ArrayList<Integer> ten = new ArrayList<Integer>();
 	
@@ -32,12 +45,25 @@ public class QNineteen {
 		System.out.println("Sum of all evens: " + sumEven);
 		System.out.println("Sum of all odds: " + sumOdd);
 		
+		for (int i = 0; i < ten.size(); ++i) {
+			//System.out.println(ten.get(i));
+			if (prime(ten.get(i)) || ten.get(i) == 1 || ten.get(i) == 2) {
+				ten.remove(i);
+				//if (i != 0) {
+					i--;
+					//System.out.println("i: " + i);
+				//}
+			}
+		}
+		
+		
+		/*
 		ten.remove(0);
 		ten.remove(0);
 		ten.remove(0);
 		ten.remove(1);
 		ten.remove(2);
-		
+		*/
 		System.out.println("Without primes: " + ten);
 		
 	}
