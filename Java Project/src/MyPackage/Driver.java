@@ -1,10 +1,16 @@
 package MyPackage;
 
+//import java.util.Scanner;
+
 //import java.util.Arrays;
+
+
+
 
 public class Driver {
 	
 	public static void main (String[] args) {
+		
 		//Q1
 		//QOne qone = new QOne();
 		int[] anArray = new int[] {1,0,5,6,3,2,3,7,9,8,4};
@@ -44,5 +50,46 @@ public class Driver {
 		//Q10
 		QTen qten = new QTen();
 		qten.Compare(19, 12);
+		
+		//Q11
+		QEleven.OtherPac();
+		
+		//Q12
+		QTwelve.enhanced();
+		
+		//Q13
+		QThirteen.marioStairs(5);
+		
+		System.out.println();
+		
+		//Q14
+		QFourteen.caseSwitch();
+		
+		//Q15
+		QFifteen qfift = new QFifteen();
+		qfift.Interfaces();
+		
+		//Q16
+		//QSixteen.command();
+		
+		//Q17
+		QSeventeen.interest();
+		
+		//Q18
+		System.out.println("Q18: ");
+		QEighteen qet = new QEighteen();
+		qet.anyUpper("any Upper case?");
+		qet.anyUpper("any upper case?");
+		qet.lowerCase("any Upper case?");
+		qet.convertToInt("20");
+		
+		//Q19
+		QNineteen.tenList();
+		
+		//Q20
+		System.out.println("Q20: ");
+		Q20.reader();
+		
+	
 	}
 }	
