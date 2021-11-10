@@ -45,9 +45,9 @@ public class QNineteen {
 		System.out.println("Sum of all evens: " + sumEven);
 		System.out.println("Sum of all odds: " + sumOdd);
 		
-		for (int i = 0; i < ten.size(); ++i) {
+		for (int i = 1; i < ten.size(); ++i) {
 			//System.out.println(ten.get(i));
-			if (prime(ten.get(i)) || ten.get(i) == 1 || ten.get(i) == 2) {
+			if (prime(ten.get(i))) {
 				ten.remove(i);
 				//if (i != 0) {
 					i--;

@@ -97,7 +97,8 @@ public class Driver {
 		qet.anyUpper("any Upper case?");
 		qet.anyUpper("any upper case?");
 		qet.lowerCase("any Upper case?");
-		qet.convertToInt("20");
+		qet.convertToInt("Joey Revay");
+		//qet.convertToInt("20");
 		System.out.println();
 		
 		//Q19
