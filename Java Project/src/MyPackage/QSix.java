@@ -7,9 +7,9 @@ public class QSix {
 		float y = ((float) x) / ((float) 2);
 		int yi = x / 2;
 		float yif = (float) yi;
-		System.out.println(y);
+		//System.out.println(y);
 		//System.out.println(yi);
-		System.out.println(yif);
+		//System.out.println(yif);
 		
 		if (y != yif) {
 			System.out.println("Q6: is odd");

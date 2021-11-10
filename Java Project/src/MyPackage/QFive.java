@@ -19,6 +19,6 @@ public class QFive {
 				.replace(" ", "")
 				.replace("]", "");
 		*/
-		System.out.println("Q5: " + newStr);
+		System.out.println("Q5: substring of " + str + ": " + newStr);
 	}
 }
